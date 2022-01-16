@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "230377507322",
+    "firebase_url": "https://guiaucr-66104.firebaseio.com",
+    "project_id": "guiaucr-66104",
+    "storage_bucket": "guiaucr-66104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230377507322:android:7f5103cf72b831241dbc43",
+        "android_client_info": {
+          "package_name": "cr.ac.ucr.ecci.eseg.guiaucr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230377507322-8r2emtbif376ere3ib52nsmoiu9v2vi5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOYkjOn53QI5_RyiVhmjjNsmcgeeaVpFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230377507322-8r2emtbif376ere3ib52nsmoiu9v2vi5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

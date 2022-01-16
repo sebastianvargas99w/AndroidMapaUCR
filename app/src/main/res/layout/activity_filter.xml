@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrar"
+        android:textColor="#000"
+        android:textSize="32dp"
+        android:padding="10dp"
+        android:textStyle="bold"/>
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width = "fill_parent"
+        android:layout_height="3dip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_facultadad_blue"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:text="Facultad"
+            android:textColor="#000"
+            android:textSize="14sp"/>
+
+        <Switch
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:id="@+id/facultad_switch"
+            android:theme="@style/AppTheme"
+            android:checked="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_fotocopiadora_green"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:text="Fotocopiadora"
+            android:textColor="#000"
+            android:textSize="14sp"/>
+
+        <Switch
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:id="@+id/fotocopiadora_switch"
+            android:theme="@style/AppTheme"
+            android:checked="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_parada_red"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:text="Parada"
+            android:textColor="#000"
+            android:textSize="14sp"/>
+
+        <Switch
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:id="@+id/parada_switch"
+            android:theme="@style/AppTheme"
+            android:checked="true"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_soda_yellow"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:text="Soda"
+            android:textColor="#000"
+            android:textSize="14sp"/>
+
+        <Switch
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:id="@+id/soda_switch"
+            android:checked="true"
+            android:theme="@style/AppTheme"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Aplicar"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"
+            android:id="@+id/aplicar"/>
+
+    </LinearLayout>
+
+</LinearLayout>

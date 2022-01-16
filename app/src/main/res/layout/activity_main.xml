@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:touchscreenBlocksFocus="false"
+    tools:showIn="@layout/app_bar_main">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="9.9371706"
+        mapbox:mapbox_cameraTargetLng="-84.0501939"
+        mapbox:mapbox_cameraZoom="15.5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/localizacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/my_location_24px"
+                android:state_pressed="true"
+                mapbox:layout_constraintBottom_toBottomOf="parent"
+                mapbox:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageButton
+                android:id="@+id/filtrar"
+                android:layout_width="49dp"
+                android:layout_height="53dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_filter_list_24"
+                android:state_pressed="true"
+                android:tint="@color/black"
+                mapbox:layout_constraintBottom_toTopOf="@+id/localizacion"
+                mapbox:layout_constraintEnd_toEndOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/progressBarMainActivity"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/centrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_map_24"
+                android:state_pressed="true"
+                android:tint="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/filtrar"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <ImageButton
+                android:id="@+id/addPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_add_circle_outline_24"
+                android:state_pressed="true"
+                android:tint="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/centrar"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+<!-- Layout que contiene los botones y la descripcion de un marcador-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:id="@+id/contenedor"
+        android:visibility="invisible"
+        android:background="#fff">
+
+        <!-- Layout que contiene la descripcion de un marcador -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:id="@+id/popup"
+        android:background="#fff">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:id="@+id/titulo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:id="@+id/descripcion"/>
+
+    </LinearLayout>
+
+        <!--Layout que contiene los botones de un marcador -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:id="@+id/botones"
+        android:background="#fff">
+
+            <ImageButton
+                android:id="@+id/caminar_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/walk_to_celeste"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/detalles"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Buttona" />
+
+            <ImageButton
+                android:id="@+id/detalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/detalles_celeste"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/agregar_a_favoritos"
+                android:text="Buttonb" />
+
+            <ToggleButton
+                android:id="@+id/agregar_a_favoritos"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/button_favorite_toggle"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <!--
+        Historia de usuario: NAR-1-4. Ver el mapa.
+        Tarea: CNA-12. Centrar el mapa en la UCR.
+        Driver: Pablo Ruiz
+        Navigators: Steven Barahona, Sebástian Vargas y Fábian Rojas.
+    -->
+
+</FrameLayout>

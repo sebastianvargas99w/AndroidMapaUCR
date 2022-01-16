@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="90dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/image_favoritos"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_baseline_favorite_24"/>
+
+            <TextView
+                android:id="@+id/text_favoritos"
+                android:text="@string/text_favoritos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:textColor="#040404"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/aboutButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:text="About"/>
+        <Button
+            android:id="@+id/cerrarSesionButton"
+            android:layout_above="@+id/aboutButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Cerrar Sesión"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

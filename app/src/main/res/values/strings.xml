@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GuiaUCR</string>
+    <string name="mapbox_access_token">sk.eyJ1IjoibmFyYW5pdGFzIiwiYSI6ImNrZjZpZTZwczBpdDcycW83M2dmdjhtYXUifQ.cez06ZSDlMnvC8s5OHiRMg</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_search">Búsqueda</string>
+    <string name="search_hint">Buscar un punto de interés</string>
+    <string name="about_text_1">Todos los años ingresa una gran cantidad de nuevos estudiantes a la
+                                Universidad de Costa Rica. La gran mayoría de ellos no tienen
+                                el conocimiento del campus como para manejarse, y debido a esto es
+                                muy común que en el primer semestre los estudiantes lleguen tarde
+                                a las clases, que se equivoquen de aula, o que simplemente no sepan
+                                cómo ubicarse cuando por ejemplo les piden que saquen alguna copia.</string>
+    <string name="about_text_2">Por esta, y más razones, se piensa en desarrollar esta aplicación que
+                                consiste en un mapa de la UCR, la cual brinda funcionalidades que
+                                le faciliten el tránsito por el campus a los nuevos estudiantes, e
+                                incluso a visitantes de la UCR.</string>
+    <string name="about_text_3">Equipo de desarrollo: \nFabián Antonio Rojas Masís B66236\nPablo César Ruiz Vásquez B56404\nSebastián Vargas Soto B47431\nSharon Bejarano Hernández A90868\nSteven Barahona Meza B70893</string>
+    <string name="test">Prueba</string>
+    <string name="menu_home">Inicio</string>
+    <string name="text_favoritos">Marcadores favoritos</string>
+    <string name="text_ir_a_marcador">Ir a marcador</string>
+</resources>
